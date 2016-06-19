@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  enum roles: [:business_admin, :business_owner, :technical_lead, :software_engineer, :associate_software_engineer]
 
 # Include default devise modules. Others available are:
 # :confirmable, :lockable, :timeoutable and :omniauthable
