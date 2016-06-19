@@ -21,6 +21,22 @@ class CommentPolicy < ApplicationPolicy
   end
 
   # Autobot: Permitted Attributes
+def permitted_attributes
+                  #add_here
+if user.business_admin?
+              [:title, :user_id]
+              elsif user.business_owner?
+              [:title, :user_id]
+              elsif user.technical_lead?
+              [:title, :user_id]
+              elsif user.software_engineer?
+              [:title, :user_id]
+              elsif user.associate_software_engineer?
+              [:title, :user_id]
+              else
+                []
+               end
+                end
 
 
 

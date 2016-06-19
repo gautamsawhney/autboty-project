@@ -21,6 +21,22 @@ class LocationPolicy < ApplicationPolicy
   end
 
   # Autobot: Permitted Attributes
+def permitted_attributes
+                  #add_here
+if user.business_admin?
+              []
+              elsif user.business_owner?
+              []
+              elsif user.technical_lead?
+              []
+              elsif user.software_engineer?
+              []
+              elsif user.associate_software_engineer?
+              []
+              else
+                []
+               end
+                end
 
 
 
