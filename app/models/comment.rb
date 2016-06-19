@@ -11,6 +11,6 @@ class Comment < ApplicationRecord
 
   # Autocode: Callbacks
 
-	# Soft Destroy
+  # Soft Destroy
 
 end

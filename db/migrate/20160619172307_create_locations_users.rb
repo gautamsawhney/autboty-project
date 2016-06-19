@@ -5,7 +5,7 @@ class CreateLocationsUsers < ActiveRecord::Migration
     end
 
     add_index :locations_users, [:location_id, :user_id],
-      name: "locations_users_index",
-      unique: true
+    name: "locations_users_index",
+    unique: true
   end
 end
