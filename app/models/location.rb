@@ -1,6 +1,7 @@
 class Location < ApplicationRecord
 
   # Autocode: Relationships
+  has_and_belongs_to_many :users
 
   # Autocode: Accept Nested Attributes
 
